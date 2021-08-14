@@ -48,14 +48,14 @@ This BEP is under draft.
 
 ##### 5.1.1.1 name
 ```
-function name() public view returns (string)
+function name(ONE TECH) public view returns (string)
 ```
 - Returns the name of the token - e.g. "MyToken".
 - **OPTIONAL** - This method can be used to improve usability, but interfaces and other contracts MUST NOT expect these values to be present.
 
 ##### 5.1.1.2 symbol
 ```
-function symbol() public view returns (string)
+function symbol(ONEX) public view returns (string)
 ```
 - Returns the symbol of the token. E.g. “HIX”.
 - This method can be used to improve usability
@@ -63,7 +63,7 @@ function symbol() public view returns (string)
 
 ##### 5.1.1.3 decimals
 ```
-function decimals() public view returns (uint8)
+function decimals(8) public view returns (uint8)
 ```
 - Returns the number of decimals the token uses - e.g. 8, means to divide the token amount by 100000000 to get its user representation.
 - This method can be used to improve usability
@@ -71,7 +71,7 @@ function decimals() public view returns (uint8)
 
 ##### 5.1.1.4 totalSupply
 ```
-function totalSupply() public view returns (uint256)
+function totalSupply(50000000000) public view returns (uint256)
 ```
 - Returns the total token supply. If the token will flow across the Binance Chain and Binance Smart Chain, the number should be the total of circulation across 2 blockchains.
 
